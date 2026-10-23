@@ -12,7 +12,7 @@
     const hoursLeft = document.querySelector("#hoursLeft");
     const minutesLeft = document.querySelector("#minutesLeft");
     const secondsLeft = document.querySelector("#secondsLeft");
-    const dateTime = null; // Кездесу күні келісілгенде ISO уақытын енгізіңіз.
+    const dateTime = new Date("2026-10-28T00:00:00+05:00").getTime(); // 28 қазанның басталуы; кездесу сағаты әлі келісілмеген.
 
     const noLines = [
       "Жоқ дейсің бе? Мысық естімегендей болды.",
@@ -76,7 +76,7 @@
       secondsLeft.textContent = pad(seconds);
 
       if (diff === 0) {
-        countdownTitle.textContent = "Мысық: кездесуге баратын уақыт болды!";
+        countdownTitle.textContent = "Бүгін — біздің кездесу күніміз!";
       }
     }
 
