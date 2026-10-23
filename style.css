@@ -1055,3 +1055,30 @@
  .memory figcaption {font-size:11px;line-height:1.35;}
  .memory-note {font-size:8px;line-height:1.3;display:block;}
 }
+
+/* Алтын күз: жылы қағаз, мыс реңктері және қалқыған жапырақтар. */
+:root {--ink:#49362b;--muted:#89715f;--paper:rgba(255,251,241,.92);--line:rgba(113,77,43,.15);--rose:#cf8250;--rose-dark:#9c492e;--leaf:#87915c;--sun:#ecc477;--sky:#d7b481;--lilac:#bd8a69;--shadow:0 18px 45px #71502d20;}
+body {background:radial-gradient(ellipse at 12% 8%,#edba6970,transparent 35%),radial-gradient(ellipse at 91% 38%,#cbb47d66,transparent 35%),linear-gradient(145deg,#fcf1dc,#f5e3c9 55%,#eee4d1);}
+.card {border-color:#dfc9a7;background:var(--paper);}
+.card::before {background:linear-gradient(90deg,#bf875d10 0 1px,transparent 1px 34px),linear-gradient(#9a8b6010 0 1px,transparent 1px 34px);}
+.date-chip {color:#975331;border-color:#d5af7c;background:#fff6e4;}
+.countdown {background:#f9ecd9c7;border-color:#dfbc94;box-shadow:0 10px 24px #ac783612;}
+.countdown-title {color:#9c5636;}.time-box {background:#fffaf1;box-shadow:inset 0 0 0 1px #dbb9946b;}
+.flower {width:42px;height:60px;opacity:.72;}
+.flower::before {inset:0;border-radius:90% 0 90% 0;background:linear-gradient(130deg,transparent 48%,#8c582a70 49% 51%,transparent 52%),linear-gradient(45deg,#bd6e35,#e6ad56);box-shadow:inset -5px -3px 10px #a35f2e20;}
+.flower::after {inset:auto;left:14px;top:40px;width:3px;height:32px;margin:0;border-radius:4px;background:#9f724b;transform:rotate(30deg);opacity:.8;}
+.flower:nth-child(2)::before {background:linear-gradient(130deg,transparent 48%,#76573270 49% 51%,transparent 52%),linear-gradient(45deg,#90905c,#bcb57c);}
+.flower:nth-child(3)::before {background:linear-gradient(130deg,transparent 48%,#76442c70 49% 51%,transparent 52%),linear-gradient(45deg,#ae503b,#d9935a);}
+.flower:nth-child(4)::before {background:linear-gradient(130deg,transparent 48%,#8c582a70 49% 51%,transparent 52%),linear-gradient(45deg,#d4963d,#efcc79);}
+.sun {background:#edc778;box-shadow:0 0 0 14px #e8be6c26;}
+.hill {background:linear-gradient(#d8b468,#b9a069);}
+.speech {background:#fffaf0;border-color:#dfc5a0;color:#76513b;box-shadow:0 12px 28px #8c64351a;}
+.mini-flower.one {--c:#cb8150;}.mini-flower.two {--c:#e6b964;}.mini-flower.three {--c:#a36b52;}
+.no,.no.trap {background:#fff5e4;color:#9a5131;border-color:#cf9c6e;box-shadow:0 10px 20px #9d683223;}
+.yes {background:linear-gradient(135deg,#d58b51,#a55334);}
+.verdict {background:#fffaf0;}.verdict h2 {color:#9c492e;}.tiny {background:#e9e8d4;color:#6e7647;}
+.date-route {background:linear-gradient(90deg,#b5976810 0 1px,transparent 1px 28px),linear-gradient(#a86f4810 0 1px,transparent 1px 28px),#fffcf3;border-color:#ded4b8;}
+.route-title {color:#7d7147;}.route-time {background:#795339;}.mini-map {background:radial-gradient(circle at 17% 18%,#edc67a88,transparent 25%),radial-gradient(circle at 80% 25%,#cf996a70,transparent 25%),linear-gradient(135deg,#f2ebd7,#f6dfbd);}
+.mini-map::before {border-top-color:#cb885b;border-right-color:#cb885b;border-bottom-color:#92915c;}.route-link {color:#8c4f30;}
+.memory-portrait {background:linear-gradient(150deg,#fff8e9ed,#f3dbb9e8);}.memory-meow {background:linear-gradient(140deg,#fcf2e6ed,#ead8c5e8);}.memory-moment {background:linear-gradient(145deg,#f9f4e8ed,#e1dfc6e8);}
+.memory {border-color:#fff9e9;box-shadow:0 16px 38px #71512c20;}.memory figcaption {color:#805638;}.memory-note {color:#9e886c;}.memory-pin {background:#d7a36b;}.memory-meow .memory-pin {background:#b88e73;}.memory-moment .memory-pin {background:#a1a16c;}

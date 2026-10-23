@@ -188,7 +188,7 @@
 
     function launchConfetti() {
       if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      const colors = ["#ff5f9e", "#ffd166", "#2f9f7b", "#8ad7ff", "#b892ff", "#ff8f70"];
+      const colors = ["#c56b39", "#e3ad50", "#87915c", "#d88b55", "#a45142", "#edc67a"];
       for (let i = 0; i < 96; i += 1) {
         const piece = document.createElement("span");
         const isHeart = i % 5 === 0;
