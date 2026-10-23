@@ -28,7 +28,7 @@
     ];
 
     const speechLines = [
-      "Мияу, өтінемін",
+      "Мяу, өтінемін",
       "Гүлдер де қобалжып тұр",
       "Бұл көзқарасты жаттықтырдым",
       "«Жоқ» есептелмейді",
@@ -181,7 +181,7 @@
       actions.style.gridTemplateColumns = "1fr";
       yesBtn.textContent = "Алақай!";
       hint.textContent = "Келістік! Алғашқы кездесуіміз болады ♡";
-      speech.textContent = "Мияу, алақай!";
+      speech.textContent = "Мяу, алақай!";
       verdict.classList.add("show");
       launchConfetti();
     }
