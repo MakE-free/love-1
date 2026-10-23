@@ -1103,3 +1103,7 @@ html.paw-mode, html.paw-mode body, html.paw-mode body *, html.paw-mode body *::b
 /* Мысықтың лапаларындағы жылы тоқылған бас киім. */
 .cat-hat {position:absolute;left:50%;bottom:-30px;width:120px;height:103px;transform:translateX(-50%);z-index:4;}
 .cat-hat svg {display:block;width:100%;height:100%;}
+
+/* Котик ұл: көгілдір жилет пен кішкентай галстук. */
+.cat-body {background:linear-gradient(110deg,#a9bfcb,#d5e0e3 50%,#a9bfcb);}
+.cat-tie {position:absolute;left:14px;top:40px;width:13px;height:30px;background:#557c91;clip-path:polygon(15% 0,85% 0,70% 20%,100% 78%,50% 100%,0 78%,30% 20%);transform:rotate(9deg);}
