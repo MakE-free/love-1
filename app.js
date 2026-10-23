@@ -245,4 +245,26 @@
         speech.textContent = speechLines[Math.floor(random(0, speechLines.length))];
       }
     }, 4200);
-  
+
+// Көрінетін DOM-меңзер: браузердің SVG cursor қолдауына тәуелсіз.
+(() => {
+  const paw = document.createElement('div');
+  paw.className = 'paw-pointer';
+  paw.setAttribute('aria-hidden', 'true');
+  paw.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g stroke="#6c432d" stroke-width="1.4"><ellipse cx="6" cy="12" rx="3.5" ry="4.5" transform="rotate(-25 6 12)" fill="#efbd96"/><ellipse cx="12.5" cy="6.5" rx="3.5" ry="4.5" transform="rotate(-8 12.5 6.5)" fill="#efbd96"/><ellipse cx="21" cy="6.5" rx="3.5" ry="4.5" transform="rotate(10 21 6.5)" fill="#efbd96"/><ellipse cx="27" cy="13" rx="3.5" ry="4.5" transform="rotate(25 27 13)" fill="#efbd96"/><path d="M7 24c0-4 5-11 9-11s10 7 10 11c0 5-5 6-9 3-4 3-10 2-10-3Z" fill="#d98f77"/></g><path d="M11 23c0-2 2-5 4-6" fill="none" stroke="#fce2cc" stroke-width="1.5" stroke-linecap="round"/></svg>';
+  document.body.appendChild(paw);
+  function hidePaw() {
+    document.documentElement.classList.remove('paw-mode');
+  }
+  document.addEventListener('pointermove', event => {
+    if (event.pointerType !== 'mouse') { hidePaw(); return; }
+    paw.style.transform = `translate3d(${event.clientX - 16}px, ${event.clientY - 16}px, 0)`;
+    document.documentElement.classList.add('paw-mode');
+  }, { passive: true });
+  document.documentElement.addEventListener('pointerleave', hidePaw);
+  document.addEventListener('pointerdown', event => {
+    if (event.pointerType !== 'mouse') hidePaw();
+  }, { passive: true });
+  window.addEventListener('blur', hidePaw);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) hidePaw(); });
+})();
