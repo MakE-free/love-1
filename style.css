@@ -1088,3 +1088,8 @@ body {background:radial-gradient(ellipse at 12% 8%,#edba6970,transparent 35%),ra
  html, body, body * {cursor: url("assets/paw-cursor.svg") 16 16, auto;}
  button, a, button *, a * {cursor: url("assets/paw-cursor.svg") 16 16, pointer;}
 }
+
+/* Батырма үстінде де табан сақталады, соның ішінде қашатын батырмада. */
+button, button:hover, button:active, button:focus, .btn, .no.running, .no.trap, a, button *, a * {
+ cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48ZyBzdHJva2U9IiM2YzQzMmQiIHN0cm9rZS13aWR0aD0iMS40Ij48ZWxsaXBzZSBjeD0iNiIgY3k9IjEyIiByeD0iMy41IiByeT0iNC41IiB0cmFuc2Zvcm09InJvdGF0ZSgtMjUgNiAxMikiIGZpbGw9IiNlZmJkOTYiLz48ZWxsaXBzZSBjeD0iMTIuNSIgY3k9IjYuNSIgcng9IjMuNSIgcnk9IjQuNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTggMTIuNSA2LjUpIiBmaWxsPSIjZWZiZDk2Ii8+PGVsbGlwc2UgY3g9IjIxIiBjeT0iNi41IiByeD0iMy41IiByeT0iNC41IiB0cmFuc2Zvcm09InJvdGF0ZSgxMCAyMSA2LjUpIiBmaWxsPSIjZWZiZDk2Ii8+PGVsbGlwc2UgY3g9IjI3IiBjeT0iMTMiIHJ4PSIzLjUiIHJ5PSI0LjUiIHRyYW5zZm9ybT0icm90YXRlKDI1IDI3IDEzKSIgZmlsbD0iI2VmYmQ5NiIvPjxwYXRoIGQ9Ik03IDI0YzAtNCA1LTExIDktMTFzMTAgNyAxMCAxMWMwIDUtNSA2LTkgMy00IDMtMTAgMi0xMC0zWiIgZmlsbD0iI2Q5OGY3NyIvPjwvZz48cGF0aCBkPSJNMTEgMjNjMC0yIDItNSA0LTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZjZTJjYyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPgo=") 16 16, pointer !important;
+}
