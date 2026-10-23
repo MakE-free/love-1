@@ -1082,3 +1082,9 @@ body {background:radial-gradient(ellipse at 12% 8%,#edba6970,transparent 35%),ra
 .mini-map::before {border-top-color:#cb885b;border-right-color:#cb885b;border-bottom-color:#92915c;}.route-link {color:#8c4f30;}
 .memory-portrait {background:linear-gradient(150deg,#fff8e9ed,#f3dbb9e8);}.memory-meow {background:linear-gradient(140deg,#fcf2e6ed,#ead8c5e8);}.memory-moment {background:linear-gradient(145deg,#f9f4e8ed,#e1dfc6e8);}
 .memory {border-color:#fff9e9;box-shadow:0 16px 38px #71512c20;}.memory figcaption {color:#805638;}.memory-note {color:#9e886c;}.memory-pin {background:#d7a36b;}.memory-meow .memory-pin {background:#b88e73;}.memory-moment .memory-pin {background:#a1a16c;}
+
+/* Мысық табаны тек тышқан қолданылатын құрылғыларда көрінеді. */
+@media (hover: hover) and (pointer: fine) {
+ html, body, body * {cursor: url("assets/paw-cursor.svg") 16 16, auto;}
+ button, a, button *, a * {cursor: url("assets/paw-cursor.svg") 16 16, pointer;}
+}
