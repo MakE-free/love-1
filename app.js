@@ -41,3 +41,21 @@ document.querySelector('#collage-file').addEventListener('change', event => {
   const reader = new FileReader(); reader.onload = () => { showCollage(reader.result); try { localStorage.setItem('date-collage', reader.result); } catch {} }; reader.readAsDataURL(file);
 });
 try { const saved = localStorage.getItem('date-collage'); if (saved) showCollage(saved); else { const image = new Image(); image.onload = () => showCollage('assets/collage.jpg'); image.src = 'assets/collage.jpg'; } } catch {}
+
+// Separate original photos take priority over the optional collage.
+const originals = [
+  ['assets/portrait.jpg', 'Самая красивая — это ты'],
+  ['assets/meow.jpg', 'Я тебя мяумяу'],
+  ['assets/moment.jpg', 'Наш маленький момент']
+];
+originals.forEach(([src, alt], index) => {
+  const image = new Image();
+  image.alt = alt;
+  image.onload = () => {
+    image.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block';
+    if (index === 0) image.style.objectPosition = '35% center';
+    if (index === 1) image.style.objectFit = 'contain';
+    document.querySelectorAll('[data-crop]')[index].replaceChildren(image);
+  };
+  image.src = src;
+});
