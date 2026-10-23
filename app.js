@@ -180,7 +180,7 @@
       yesBtn.classList.remove("teased");
       actions.style.gridTemplateColumns = "1fr";
       yesBtn.textContent = "Алақай!";
-      hint.textContent = "Келістік! Алғашқы кездесуіміз болады ♡";
+      hint.textContent = "Келістік пуська, кездесуіміздің чек-листіне өтсеңіз";
       speech.textContent = "Мяу, алақай!";
       verdict.classList.add("show");
       launchConfetti();
