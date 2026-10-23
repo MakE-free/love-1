@@ -1099,3 +1099,7 @@ button, button:hover, button:active, button:focus, .btn, .no.running, .no.trap, 
 .paw-pointer svg {display:block;width:32px;height:32px;}
 html.paw-mode .paw-pointer {display:block;}
 html.paw-mode, html.paw-mode body, html.paw-mode body *, html.paw-mode body *::before, html.paw-mode body *::after {cursor:none!important;}
+
+/* Мысықтың лапаларындағы жылы тоқылған бас киім. */
+.cat-hat {position:absolute;left:50%;bottom:-30px;width:120px;height:103px;transform:translateX(-50%);z-index:4;}
+.cat-hat svg {display:block;width:100%;height:100%;}
